@@ -1,16 +1,22 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
-.header{
-    display:flex;
+
+.logo {
+    width: 8%;
+}
+
+.header {
+    display: flex;
     justify-content: space-between;
-    padding:1vw;
+    padding: 1vw;
     align-items: center;
 }
-.navbar{
+
+.navbar {
     display: flex;
-    gap: 2rem;
+    gap: 2vw;
     align-items: center;
 }
 
@@ -20,19 +26,25 @@
 }
 
 .header .navbar .search input {
-    padding: 1rem 2rem;
-    border-radius: 1rem;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
     background-color: gray;
     color: #fff;
     border: 0;
     outline: none;
+    width: 25vw;
+    height: 1.5vw;
+}
+
+.header .navbar .search input::placeholder {
+    font-size: 1vw;
 }
 
 .header .navbar .search img {
     position: absolute;
     right: 10%;
     top: 25%;
-    width: 20px;
+    width: 1.5vw;
 }
 
 ::placeholder {
@@ -42,11 +54,43 @@
 
 .header .navbar .cart {
     display: flex;
-    gap: 1rem;
+    gap: 1vw;
 }
 
 .cart a {
-    color:black;
-    font-size:25px;
+    color: gray;
+    font-size: 2vw;
     text-decoration: none;
+    padding-left: 1vw;
+    font-family: sans-serif;
+}
+
+.cart img {
+    width: 2vw;
+    padding-left: 1vw;
+}
+
+/* font size , font-family color, position-absolute */
+
+.banner {
+    position: absolute;
+    top: 19vw;
+    left: 5vw;
+    font-size: 4vw;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(44, 44, 44);
+}
+.banner p{
+    padding-bottom: 1vw;
+}
+p.season {
+    font-weight: 300;
+    font-size: 3vw;
+    padding: 1vw 0 0 3vw;
+}
+.offers {
+    text-align: center;
+    background-color: #373836;
+    height
 }
